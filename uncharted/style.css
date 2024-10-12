@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#parent{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#nate{
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    height: 85vh;
+    z-index: 1;
+    filter: drop-shadow(12px 12px 5px black);
+    animation-name: expand;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes expand{
+    0%{
+        transform: scaleX(1);
+    }
+    50%{
+        transform: scaleX(1.008);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+
+
+#logo{
+    position: absolute;
+    bottom: 3%;
+    left: 2%;
+    height: 12vh;
+}
